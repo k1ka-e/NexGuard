@@ -8,6 +8,51 @@ a {
     text-decoration: none;
 }
 
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a small {
+    opacity: 1 !important;
+}
+
+/* Скрыть текст "файл не выбран" */
+input[type="file"]::before {
+    display: none;
+}
+
+/* Скрыть кнопку "выбрать файл" */
+input[type="file"]::-webkit-file-upload-button {
+    display: none;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-style: none;
+}
+
+/* Removes default focus */
+input:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+input {
+    -webkit-appearance: none; /* Отключаем стандартные стили в WebKit браузерах */
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+select {
+    -webkit-appearance: none; /* Отключаем стандартные стили в WebKit браузерах */
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 @font-face {
     font-family: 'Inter';
     font-weight: 100;
@@ -80,6 +125,10 @@ a {
     font-display: swap;
 }
 
+/*.custom-container {*/
+/*    max-width: 1527px;*/
+/*}*/
+
 /*HEADER*/
 .header-top {
     background-color: var(--purple);
@@ -100,7 +149,7 @@ a {
 }
 
 .header_top_left {
-    gap: 10px;
+    gap: 24px;
     text-align: center;
     align-items: center;
 }
@@ -111,8 +160,14 @@ a {
 
 .header_middle {
     display: flex;
-    padding: 10px;
+    padding: 10px 0;
     justify-content: space-between;
+}
+
+.nav_block {
+    align-items: center;
+    display: inline-flex;
+    vertical-align: middle;
 }
 
 .nav_link {
@@ -146,4 +201,105 @@ a {
     color: var(--white);
 }
 
+.lng_option a {
+    color: var(--black);
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.lang {
+    align-items: center;
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: end;
+}
+
+.contact_block {
+    align-items: center;
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: end;
+}
+
 /*HEADER END*/
+
+/*MAIN*/
+.main {
+    background: url("/assets/img/main-background.png");
+    background-size: cover;
+}
+
+.main_content {
+    padding-top: 213px;
+    padding-bottom: 393px;
+}
+
+.main_text {
+    color: var(--white);
+    font-family: "Inter";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+}
+
+.main_title {
+    color: var(--white);
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+
+
+    margin: 24px 0;
+}
+
+/*MAIN END*/
+
+/*OFFERS*/
+
+.offers {
+    background: var(--white);
+}
+
+.offers_title {
+    color: rgb(30, 30, 30);
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.offers_content {
+    padding: 47px 0 56px 0;
+}
+
+.offers_card_item {
+    width: 588px;
+    min-height: 392px;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 24px;
+    background: rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+.offers_card_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 317px 36px 36px 32px;
+}
+
+.offers_card_title {
+    color: var(--white);
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+}
+
+/*OFFERS END*/
