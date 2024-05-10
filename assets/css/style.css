@@ -303,3 +303,59 @@ select {
 }
 
 /*OFFERS END*/
+
+/*GOODS*/
+.goods {
+    background: #F2F3F7;
+}
+
+.goods_title {
+    color: rgb(30, 30, 30);
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.goods_content {
+    padding: 40px 0 40px 0;
+}
+
+.goods_card_block_image {
+    border-radius: 12px;
+    background: var(--white);
+}
+
+.goods_card_image {
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.goods_card_row {
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.goods_card_title {
+    color: rgb(30, 30, 30);
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+
+    margin: 12px 0px;
+
+}
+
+.goods_card_button {
+    color: var(--purple);
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+/*GOODS END*/
