@@ -1,0 +1,25 @@
+/* contact page */
+
+@media (max-width: 992px) {
+    .contact-map {
+        width: 420px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-intro {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .contact-intro-item.map {
+        width: 90%;
+        max-width: 100% ;
+    }
+
+    .contact-map {
+        width: 100%;
+    }
+}
+

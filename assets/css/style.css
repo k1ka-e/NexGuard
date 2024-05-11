@@ -51,7 +51,7 @@ select {
     font-family: 'Inter';
     font-weight: 100;
     font-style: normal;
-    src: url('../fonts/Inter-Thin.eot');
+    src: url('../fonts/Inter-Thin.otf');
     font-display: swap;
 }
 
@@ -59,7 +59,7 @@ select {
     font-family: 'Inter';
     font-weight: 200;
     font-style: normal;
-    src: url('../fonts/Inter-ExtraLight.eot');
+    src: url('../fonts/Inter-ExtraLight.otf');
     font-display: swap;
 }
 
@@ -67,7 +67,7 @@ select {
     font-family: 'Inter';
     font-weight: 300;
     font-style: normal;
-    src: url('../fonts/Inter-Light.eot');
+    src: url('../fonts/Inter-Light.otf');
     font-display: swap;
 }
 
@@ -75,7 +75,7 @@ select {
     font-family: 'Inter';
     font-weight: 400;
     font-style: normal;
-    src: url('../fonts/Inter-Regular.eot');
+    src: url('../fonts/Inter-Regular.otf');
     font-display: swap;
 }
 
@@ -83,7 +83,7 @@ select {
     font-family: 'SF-Pro';
     font-weight: 400;
     font-style: normal;
-    src: url('../fonts/SF-Pro-Display-Regular.eot');
+    src: url('../fonts/SF-Pro-Display-Regular.otf');
     font-display: swap;
 }
 
@@ -91,7 +91,7 @@ select {
     font-family: 'Inter';
     font-weight: 500;
     font-style: normal;
-    src: url('../fonts/Inter-Medium.eot');
+    src: url('../fonts/Inter-Medium.otf');
     font-display: swap;
 }
 
@@ -99,7 +99,7 @@ select {
     font-family: 'Inter';
     font-weight: 600;
     font-style: normal;
-    src: url('../fonts/Inter-SemiBold.eot');
+    src: url('../fonts/Inter-SemiBold.otf');
     font-display: swap;
 }
 
@@ -107,7 +107,7 @@ select {
     font-family: 'Inter';
     font-weight: 700;
     font-style: normal;
-    src: url('../fonts/Inter-Bold.eot');
+    src: url('../fonts/Inter-Bold.otf');
     font-display: swap;
 }
 
@@ -115,7 +115,7 @@ select {
     font-family: 'Inter';
     font-weight: 800;
     font-style: normal;
-    src: url('../fonts/Inter-ExtraBold.eot');
+    src: url('../fonts/Inter-ExtraBold.otf');
     font-display: swap;
 }
 
@@ -123,7 +123,7 @@ select {
     font-family: 'Inter';
     font-weight: 900;
     font-style: normal;
-    src: url('../fonts/Inter-Black.eot');
+    src: url('../fonts/Inter-Black.otf');
     font-display: swap;
 }
 
@@ -760,3 +760,97 @@ footer {
 }
 
 /*FOOTER END*/
+
+
+/*contact page*/
+
+.guard-contact {
+    padding: 64px 0;
+}
+
+.contact-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 40px;
+}
+
+.contact-intro-item.info {
+    max-width: 320px;
+}
+
+.contact-intro-item.map {
+    max-width: 588px;
+}
+
+.contact-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-info-item a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1E1E1E;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    max-width: 282px;
+    align-items: end;
+}
+
+.contact-form-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1E1E1E;
+    margin-bottom: 16px;
+}
+
+.contact-form-item {
+    width: 100%;
+    border: 1px solid #94A3B8;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #94A3B8;
+    margin-bottom: 8px;
+    line-height: 19px;
+}
+
+.contact-form-item::placeholder {
+    color: #94A3B8;
+}
+
+.contact-form-btn {
+    display: flex;
+    width: max-content;
+    line-height: 19px;
+    padding: 12px 16px;
+    color: #ffffff;
+    background: #5E3570;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.contact-map {
+    border-radius: 16px;
+}
