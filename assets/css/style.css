@@ -41,12 +41,6 @@ input:focus {
     box-shadow: none;
 }
 
-input {
-    -webkit-appearance: none; /* Отключаем стандартные стили в WebKit браузерах */
-    outline: none !important;
-    box-shadow: none !important;
-}
-
 select {
     -webkit-appearance: none; /* Отключаем стандартные стили в WebKit браузерах */
     outline: none !important;
@@ -587,6 +581,117 @@ select {
 
 
 /*OUR WORKS END*/
+
+/*CONTACT*/
+
+/*CONTACT END*/
+
+/*EQUIPMENT*/
+.equipment {
+    margin: 24px 0 64px 0;
+}
+
+.filter_content {
+    border-radius: 12px;
+    background: var(--white);
+}
+
+.filter_subtitle {
+    color: rgb(30, 30, 30);
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.filter_catalogs_title {
+    color: rgb(30, 30, 30);
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+    margin: 24px 0 24px 0;
+}
+
+.filter_content {
+    padding: 24px 24px 32px 24px;
+}
+
+.filter_catalogs_content {
+
+}
+
+.filter_catalogs_form {
+
+}
+
+.checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checkbox-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.checkbox-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    transition: .3s;
+}
+
+.checkbox-icon {
+    opacity: 0;
+    transition: .3s;
+}
+
+.checkbox:checked + .checkbox-view {
+    background-color: green;
+}
+
+.checkbox:checked + .checkbox-view .checkbox-icon {
+    opacity: 1;
+}
+
+.filter_catalogs_label {
+    color: rgb(30, 30, 30);
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+
+}
+
+.filter_catalogs_checkbox_block {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 24px;
+
+}
+
+
+.equipment_card_row {
+    gap: 24px;
+}
+
+.equipment_nav_pagination {
+    margin-top: 64px;
+}
+/*EQUIPMENT END*/
 
 /*FOOTER*/
 footer {
