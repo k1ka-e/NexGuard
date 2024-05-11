@@ -237,8 +237,10 @@ select {
 }
 
 .main_content {
-    padding-top: 213px;
-    padding-bottom: 393px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .main_text {
@@ -637,7 +639,12 @@ select {
     cursor: pointer;
     display: flex;
     align-items: center;
+
+    color: rgb(30, 30, 30);
+    font-family: "Inter";
     font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
 }
 
 .checkbox-view {
@@ -647,7 +654,7 @@ select {
     width: 24px;
     height: 24px;
     margin-right: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid rgb(30, 30, 30);
     border-radius: 6px;
     background: #fff;
     transition: .3s;
@@ -659,7 +666,8 @@ select {
 }
 
 .checkbox:checked + .checkbox-view {
-    background-color: green;
+    background-color: var(--purple);
+    border: none;
 }
 
 .checkbox:checked + .checkbox-view .checkbox-icon {
@@ -773,6 +781,9 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 0 40px;
+
+    height: 100%;
+    min-height: 60vh;
 }
 
 .contact-intro-item.info {
