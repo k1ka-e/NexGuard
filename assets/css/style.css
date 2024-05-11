@@ -137,6 +137,10 @@ select {
 /*    max-width: 1527px;*/
 /*}*/
 
+.site {
+    background: #F2F3F7;
+}
+
 /*HEADER*/
 .header-top {
     background-color: var(--purple);
@@ -423,7 +427,7 @@ select {
 .leave_request {
     background: #F2F3F7;
 
-    padding: 151px 0 51px 0;
+    padding: 0 0 51px 0;
 }
 
 .leave_request_content {
@@ -451,12 +455,62 @@ select {
     font-weight: 400;
     line-height: 150%;
 }
+
 /*LEAVE REQUEST END*/
+
+/*ABOUT*/
+.about_slider_content {
+    background: url("/assets/img/main-background.png");
+    background-size: cover;
+    border-radius: 12px;
+
+    margin-top: 12px;
+}
+
+.about_slider_text {
+    color: var(--white);
+    font-family: "Inter";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+
+    padding: 92px 0 92px 40px;
+}
+
+.about_content {
+    padding-top: 40px;
+}
+
+.about_title {
+    color: rgb(30, 30, 30);
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+
+    margin-bottom: 12px;
+}
+
+.about_text {
+    color: rgb(30, 30, 30);
+    font-family: "Inter";
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.our_works_content_about {
+    padding: 100px 0;
+}
+
+/*ABOUT END*/
 
 
 /*FOOTER*/
 footer {
     border-top: 1px solid rgba(30, 30, 30, 0.12);
+    background: var(--white);
 }
 
 .footer_content {
@@ -474,7 +528,7 @@ footer {
 }
 
 .footer_custom_text, .footer_custom_text a,
-.footer_custom_text span{
+.footer_custom_text span {
     color: rgb(30, 30, 30);
     font-family: "Inter";
     font-size: 14px;
@@ -518,4 +572,5 @@ footer {
     height: 32px;
 
 }
+
 /*FOOTER END*/
