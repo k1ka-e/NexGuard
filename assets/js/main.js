@@ -1,32 +1,26 @@
-ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-        center: [41.322341, 69.280520], // Координаты центра карты
-        zoom: 11 // Уровень масштабирования
+// Mobile navigation
+document.addEventListener("DOMContentLoaded", function () {
+    var body = document.body;
+    var burgerMenu = document.querySelector(".b-menu");
+    var burgerContain = document.querySelector(".b-container");
+    var mainMenu = document.querySelector('.mainMenu');
+    var mainHeader = document.querySelector('.main-header-area');
+    let headerLogo = document.getElementById('header_logo_mobile');
+
+    burgerMenu.addEventListener("click", function () {
+        [body, burgerContain, mainMenu].forEach(function (el) {
+            el.classList.toggle("open");
+        });
+
+        mainHeader.style.display = 'none';
     });
-
-    // Создаем маркер с собственным изображением
-    var myPlacemark = new ymaps.Placemark(
-        [41.322341, 69.280520], // Координаты местоположения маркера
-        {}, // Свойства маркера (в данном случае пустой объект)
-        {
-            iconLayout: 'default#image', // Определяем тип макета маркера
-            iconImageHref: '/assets/img/pin.png', // Путь к изображению вашего маркера
-            iconImageSize: [42, 48], // Размеры изображения
-            iconImageOffset: [-15, -15] // Смещение изображения
-        }
-    );
-
-    // Добавляем маркер на карту
-    myMap.geoObjects.add(myPlacemark);
 });
-
-
 // Инициализация превью слайдера
 const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ищем слайдер превью по селектору
     // задаем параметры
     direction: 'vertical', // вертикальная прокрутка
-    slidesPerView: 3, // показывать по 3 превью
-    spaceBetween: 24, // расстояние между слайдами
+    slidesPerView: 4, // показывать по 4 превью
+    spaceBetween: 23, // расстояние между слайдами
     navigation: { // задаем кнопки навигации
         nextEl: '.slider__next', // кнопка Next
         prevEl: '.slider__prev' // кнопка Prev
