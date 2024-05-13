@@ -1,3 +1,26 @@
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+        center: [41.322341, 69.280520], // Координаты центра карты
+        zoom: 11 // Уровень масштабирования
+    });
+
+    // Создаем маркер с собственным изображением
+    var myPlacemark = new ymaps.Placemark(
+        [41.322341, 69.280520], // Координаты местоположения маркера
+        {}, // Свойства маркера (в данном случае пустой объект)
+        {
+            iconLayout: 'default#image', // Определяем тип макета маркера
+            iconImageHref: '/assets/img/pin.png', // Путь к изображению вашего маркера
+            iconImageSize: [42, 48], // Размеры изображения
+            iconImageOffset: [-15, -15] // Смещение изображения
+        }
+    );
+
+    // Добавляем маркер на карту
+    myMap.geoObjects.add(myPlacemark);
+});
+
+
 // Инициализация превью слайдера
 const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ищем слайдер превью по селектору
     // задаем параметры
@@ -42,3 +65,4 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
         }
     }
 });
+
