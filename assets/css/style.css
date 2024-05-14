@@ -1151,7 +1151,7 @@ body {
 }
 
 .slider__thumbs {
-    height: calc(400px - 96px);
+    height: calc(500px - 96px);
 }
 
 .slider__thumbs .slider__image {
