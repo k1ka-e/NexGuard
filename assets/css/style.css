@@ -1105,122 +1105,35 @@ select {
 }
 
 /*slider*/
-body {
-    background: #121212;
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 10px !important;
 }
 
-.slider {
-    color: #fff;
+.swiper-button-next,
+.swiper-button-prev {
+position: absolute !important;
+bottom: 10px !important;
+/*right: 10px !important;*/
+    z-index: 10 !important;
+    top: 95% !important;
+    color: var(--purple) !important;
+
+    width: 24px !important;
+    height: 24px !important;
+
+    border: 1px solid var(--purple) !important;
+    backdrop-filter: blur(10px) !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+    border-radius: 100%;
 }
 
-.slider .swiper-container {
-    width: 100%;
-    height: 100%;
+.swiper-button-next {
+    right: 30px !important;
 }
 
-.slider__flex {
-    display: flex;
-    align-items: flex-start;
-}
-
-.slider__col {
-    display: flex;
-    flex-direction: column;
-    width: 93px;
-    margin-right: 7px;
-}
-
-.slider__prev,
-.slider__next {
-    cursor: pointer;
-    text-align: center;
-    font-size: 14px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.slider__prev:focus,
-.slider__next:focus {
-    outline: none;
-}
-
-.slider__thumbs {
-    height: calc(500px - 96px);
-}
-
-.slider__thumbs .slider__image {
-    transition: 0.25s;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.5;
-}
-
-.slider__thumbs .slider__image:hover {
-    opacity: 1;
-}
-
-.swiper-slide-thumb-active {
-    border: 1px solid var(--purple);
-}
-
-.swiper-slide {
-    border-radius: 4px;
-    background: var(--white);
-
-    width: 77px !important;
-    height: 77px !important;
-}
-
-.swiper-slide-prev {
-    border-radius: 4px;
-    background: var(--white);
-}
-
-.slider__image-prev {
-    padding: 4px;
-}
-
-.slider__image {
-    padding: 8px;
-}
-
-.slider__thumbs .swiper-slide-thumb-active .slider__image {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    opacity: 1;
-}
-
-.slider__images {
-    height: 400px;
-}
-
-.slider__images .slider__image img {
-    transition: 3s;
-}
-
-.slider__images .slider__image:hover img {
-    transform: scale(1.1);
-}
-
-.slider__image {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    overflow: hidden;
-}
-
-.slider__image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+.swiper-button-prev {
+    right: 70px !important;
+    left: unset !important;
 }
 
 @media (max-width: 767.98px) {

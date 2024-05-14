@@ -15,6 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
         mainHeader.style.display = 'none';
     });
 });
+
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 // Инициализация превью слайдера
 const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ищем слайдер превью по селектору
     // задаем параметры
@@ -59,4 +67,5 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
         }
     }
 });
+
 
