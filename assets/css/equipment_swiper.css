@@ -75,6 +75,10 @@
     padding: 4px;
 }
 
+.slider__image-prev img{
+   width: 100%;
+}
+
 .slider__image {
     padding: 8px;
 }
@@ -110,4 +114,17 @@
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+
+    .slider__images {
+        width: 100%;
+    }
+
+    .slider__prev,
+    .slider__next {
+        height: auto;
+        width: 32px;
+    }
 }

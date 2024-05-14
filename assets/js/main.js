@@ -43,7 +43,7 @@ const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ище
     freeMode: true, // при перетаскивании превью ведет себя как при скролле
     breakpoints: { // условия для разных размеров окна браузера
         0: { // при 0px и выше
-            direction: 'horizontal', // горизонтальная прокрутка
+            direction: 'vertical', // горизонтальная прокрутка
         },
         768: { // при 768px и выше
             direction: 'vertical', // вертикальная прокрутка
@@ -67,7 +67,7 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
     },
     breakpoints: { // условия для разных размеров окна браузера
         0: { // при 0px и выше
-            direction: 'horizontal', // горизонтальная прокрутка
+            direction: 'vertical', // горизонтальная прокрутка
         },
         768: { // при 768px и выше
             direction: 'vertical', // вертикальная прокрутка
