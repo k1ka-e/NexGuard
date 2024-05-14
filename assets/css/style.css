@@ -977,9 +977,14 @@ select {
 
 }
 
+.equipment_content_row {
+    gap: 24px;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
 
 .equipment_card_row {
-    gap: 24px;
+    gap: 28px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 

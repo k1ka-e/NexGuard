@@ -23,6 +23,13 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+var swiper_our_works = new Swiper(".mySwiper_our_works", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 // Инициализация превью слайдера
 const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ищем слайдер превью по селектору
     // задаем параметры
