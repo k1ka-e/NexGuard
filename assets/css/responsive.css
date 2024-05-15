@@ -250,17 +250,33 @@
     }
     /*about page end*/
 
+    .offers_card_title {
+        font-size: 28px;
+        line-height: 35px;
+    }
 }
 
 @media (max-width: 390px) {
     /*header*/
-    /*.mainMenu a {*/
-    /*    font-size: 16px;*/
-    /*}*/
-    /*.custom_text_mobile_menu {*/
-    /*    font-size: 16px;*/
-    /*}*/
+    .mainMenu a {
+        font-size: 16px;
+    }
+    .custom_text_mobile_menu {
+        font-size: 16px;
+    }
     /*header end*/
+
+    /*    main */
+    .main_text {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .main_title {
+        font-size: 17px;
+    }
+
+    /*    main end*/
 
     /*about page*/
     .about_slider_text {
