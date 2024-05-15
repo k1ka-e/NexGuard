@@ -12,7 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
             el.classList.toggle("open");
         });
 
-        mainHeader.style.display = 'none';
+        if (mainMenu.classList.contains("open")) {
+            mainHeader.style.display = 'none';
+        } else {
+            mainHeader.style.display = 'block';
+        }
     });
 });
 
