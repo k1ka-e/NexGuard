@@ -503,14 +503,17 @@ select {
 }
 
 .main_content {
-    height: 100vh;
+    height: 55vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    position: relative;
+    z-index: 10;
 }
 
 .main_text {
-    color: var(--white);
+    color: var(--black);
     font-family: "Inter";
     font-size: 64px;
     font-weight: 700;
@@ -518,7 +521,7 @@ select {
 }
 
 .main_title {
-    color: var(--white);
+    color: var(--black);
     font-family: "Inter";
     font-size: 18px;
     font-weight: 400;
@@ -1372,3 +1375,52 @@ footer {
 }
 
 /*modal end*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*overflow: auto;*/
+}
+
+.main {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hero-background svg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    will-change: transform;
+    transition: transform 0.05s ease-out;
+}
+
+.hero-background .purple-lines, .hero-background .yellow-lines--mobile, .hero-background .white-triangle, .hero-background .white-triangle--mobile {
+    width: 100%;
+    height: auto;
+    top: 0;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+
+
+.hero-background .grey-triangles {
+    height: auto;
+    width: 100%;
+}

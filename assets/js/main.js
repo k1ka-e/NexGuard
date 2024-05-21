@@ -1,3 +1,35 @@
+// document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    // document.addEventListener('scroll', function () {
+    //     var scrollPosition = window.scrollY; // Используем scrollY для вертикальной прокрутки
+    //     const greyTriangles = document.querySelector('.grey-triangles');
+    //
+    //     if (greyTriangles) {
+    //         // Рассчитываем новые значения для трансформации
+    //         const scroll = scrollPosition / window.innerHeight;
+    //         const translateX = Math.max(-180, -180 * scroll) + "%"; // Перемещаем на -180% по оси X при полной прокрутке
+    //         console.log(translateX)
+    //         const newScale = Math.min(4, 1 + 2 * scroll); // Увеличиваем масштаб от 1 до 4
+    //
+    //         // Применяем новые значения к стилям элемента
+    //         greyTriangles.style.transform = `translate(-50%, -${translateX}) scale(${newScale}) translate3d(0px, 0px, 0px)`;
+    //         greyTriangles.style.transition = 'transform 0.3s ease-out 0s';
+    //     }
+    // });
+
+
+
+
+    window.addEventListener('scroll', function () {
+        var scrollingTexts = document.querySelector('.main_content');
+
+        var scrollPosition = window.scrollY;
+        var windowHeight = window.innerHeight;
+        var scrollPercentage = Math.min(scrollPosition / windowHeight, 1);
+        scrollingTexts.style.transform = 'translateX(' + (-scrollPercentage * 100) + '%)';
+    });
+
+});
 // Mobile navigation
 document.addEventListener("DOMContentLoaded", function () {
     var body = document.body;
@@ -20,19 +52,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-var swiper = new Swiper(".mySwiper", {
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
-var swiper_our_works = new Swiper(".mySwiper_our_works", {
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+// var swiper = new Swiper(".mySwiper", {
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+// });
+//
+// var swiper_our_works = new Swiper(".mySwiper_our_works", {
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+// });
 
 // Инициализация превью слайдера
 const sliderThumbs = new Swiper('.slider__thumbs .swiper-container', { // ищем слайдер превью по селектору
